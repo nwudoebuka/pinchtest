@@ -1,0 +1,6 @@
+framework module Pods_PinchPhotoApp_PinchPhotoAppUITests {
+  umbrella header "Pods-PinchPhotoApp-PinchPhotoAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

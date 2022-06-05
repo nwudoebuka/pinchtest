@@ -1,0 +1,940 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19270895434660D90591C7E8 /* Pods_PinchPhotoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3952C355BB0F7AEC8B88187D /* Pods_PinchPhotoApp.framework */; };
+		6362708301A59E0DADBBD712 /* Pods_PinchPhotoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7574D32BF3C629AFBA69ADE /* Pods_PinchPhotoAppTests.framework */; };
+		CC02D0415488502DF88942C6 /* Pods_PinchPhotoApp_PinchPhotoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3DB2D4E9DD25AA9CBA19EA /* Pods_PinchPhotoApp_PinchPhotoAppUITests.framework */; };
+		F59A7961284B62F900D8D2ED /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A7960284B62F900D8D2ED /* PhotosTableViewCell.swift */; };
+		F59A7964284B66EE00D8D2ED /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A7963284B66EE00D8D2ED /* Service.swift */; };
+		F59A7968284B676300D8D2ED /* AlbumResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A7967284B676300D8D2ED /* AlbumResponse.swift */; };
+		F59A796A284B6AFB00D8D2ED /* PhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A7969284B6AFB00D8D2ED /* PhotoResponse.swift */; };
+		F59A796D284B6BA300D8D2ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A796C284B6BA300D8D2ED /* Constants.swift */; };
+		F59A796F284B70D800D8D2ED /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A796E284B70D800D8D2ED /* NetworkError.swift */; };
+		F59A7971284B742400D8D2ED /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A7970284B742400D8D2ED /* MockService.swift */; };
+		F59A7977284B7C4000D8D2ED /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A7976284B7C3F00D8D2ED /* ViewModel.swift */; };
+		F59A7979284B843100D8D2ED /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A7978284B843100D8D2ED /* BaseViewController.swift */; };
+		F59A797C284BDED200D8D2ED /* Ext+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A797B284BDED200D8D2ED /* Ext+UIImageView.swift */; };
+		F59A797E284BE3A100D8D2ED /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A797D284BE3A100D8D2ED /* PhotoDetailsViewController.swift */; };
+		F59A7980284BFAA100D8D2ED /* Ext+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A797F284BFAA000D8D2ED /* Ext+Array.swift */; };
+		F5B8059B284A31EF00288229 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8059A284A31EF00288229 /* AppDelegate.swift */; };
+		F5B8059D284A31EF00288229 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8059C284A31EF00288229 /* SceneDelegate.swift */; };
+		F5B8059F284A31EF00288229 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8059E284A31EF00288229 /* ViewController.swift */; };
+		F5B805A2284A31EF00288229 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B805A0284A31EF00288229 /* Main.storyboard */; };
+		F5B805A5284A31EF00288229 /* PinchPhotoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5B805A3284A31EF00288229 /* PinchPhotoApp.xcdatamodeld */; };
+		F5B805A7284A31F300288229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B805A6284A31F300288229 /* Assets.xcassets */; };
+		F5B805AA284A31F300288229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B805A8284A31F300288229 /* LaunchScreen.storyboard */; };
+		F5B805B5284A31F400288229 /* PinchPhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B805B4284A31F400288229 /* PinchPhotoAppTests.swift */; };
+		F5B805BF284A31F400288229 /* PinchPhotoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B805BE284A31F400288229 /* PinchPhotoAppUITests.swift */; };
+		F5B805C1284A31F400288229 /* PinchPhotoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B805C0284A31F400288229 /* PinchPhotoAppUITestsLaunchTests.swift */; };
+		F5CFE53D284B264F00E36F49 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CFE53C284B264F00E36F49 /* Storyboarded.swift */; };
+		F5CFE53F284B294B00E36F49 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CFE53E284B294B00E36F49 /* Coordinator.swift */; };
+		F5CFE541284B298400E36F49 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CFE540284B298400E36F49 /* MainCoordinator.swift */; };
+		F5CFE545284B2E7D00E36F49 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CFE544284B2E7D00E36F49 /* AlbumTableViewCell.swift */; };
+		F5CFE547284B5A6600E36F49 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CFE546284B5A6600E36F49 /* PhotosViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5B805B1284A31F400288229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5B8058F284A31EE00288229 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5B80596284A31EF00288229;
+			remoteInfo = PinchPhotoApp;
+		};
+		F5B805BB284A31F400288229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5B8058F284A31EE00288229 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5B80596284A31EF00288229;
+			remoteInfo = PinchPhotoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		363AA860397B54C927884A6A /* Pods-PinchPhotoApp-PinchPhotoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinchPhotoApp-PinchPhotoAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-PinchPhotoApp-PinchPhotoAppUITests/Pods-PinchPhotoApp-PinchPhotoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3952C355BB0F7AEC8B88187D /* Pods_PinchPhotoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinchPhotoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3DB2D4E9DD25AA9CBA19EA /* Pods_PinchPhotoApp_PinchPhotoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinchPhotoApp_PinchPhotoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC1DF9D7D13CE3967C602A1 /* Pods-PinchPhotoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinchPhotoApp.release.xcconfig"; path = "Target Support Files/Pods-PinchPhotoApp/Pods-PinchPhotoApp.release.xcconfig"; sourceTree = "<group>"; };
+		C1A09BD69B57587E8822E9D8 /* Pods-PinchPhotoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinchPhotoAppTests.release.xcconfig"; path = "Target Support Files/Pods-PinchPhotoAppTests/Pods-PinchPhotoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0749E5A88F54B4914CCF9A3 /* Pods-PinchPhotoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinchPhotoApp.debug.xcconfig"; path = "Target Support Files/Pods-PinchPhotoApp/Pods-PinchPhotoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E70344D83D5A7525C911131D /* Pods-PinchPhotoApp-PinchPhotoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinchPhotoApp-PinchPhotoAppUITests.release.xcconfig"; path = "Target Support Files/Pods-PinchPhotoApp-PinchPhotoAppUITests/Pods-PinchPhotoApp-PinchPhotoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E7AF9E5D0573386F0C9DAC6F /* Pods-PinchPhotoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinchPhotoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-PinchPhotoAppTests/Pods-PinchPhotoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F59A7960284B62F900D8D2ED /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
+		F59A7963284B66EE00D8D2ED /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		F59A7967284B676300D8D2ED /* AlbumResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumResponse.swift; sourceTree = "<group>"; };
+		F59A7969284B6AFB00D8D2ED /* PhotoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoResponse.swift; sourceTree = "<group>"; };
+		F59A796C284B6BA300D8D2ED /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F59A796E284B70D800D8D2ED /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F59A7970284B742400D8D2ED /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		F59A7976284B7C3F00D8D2ED /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		F59A7978284B843100D8D2ED /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F59A797B284BDED200D8D2ED /* Ext+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIImageView.swift"; sourceTree = "<group>"; };
+		F59A797D284BE3A100D8D2ED /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
+		F59A797F284BFAA000D8D2ED /* Ext+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Array.swift"; sourceTree = "<group>"; };
+		F5B80597284A31EF00288229 /* PinchPhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinchPhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B8059A284A31EF00288229 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5B8059C284A31EF00288229 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F5B8059E284A31EF00288229 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5B805A1284A31EF00288229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5B805A4284A31EF00288229 /* PinchPhotoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PinchPhotoApp.xcdatamodel; sourceTree = "<group>"; };
+		F5B805A6284A31F300288229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5B805A9284A31F300288229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5B805AB284A31F300288229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5B805B0284A31F400288229 /* PinchPhotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinchPhotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B805B4284A31F400288229 /* PinchPhotoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchPhotoAppTests.swift; sourceTree = "<group>"; };
+		F5B805BA284A31F400288229 /* PinchPhotoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinchPhotoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B805BE284A31F400288229 /* PinchPhotoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchPhotoAppUITests.swift; sourceTree = "<group>"; };
+		F5B805C0284A31F400288229 /* PinchPhotoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchPhotoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F5CFE53C284B264F00E36F49 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		F5CFE53E284B294B00E36F49 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F5CFE540284B298400E36F49 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		F5CFE544284B2E7D00E36F49 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		F5CFE546284B5A6600E36F49 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		F7574D32BF3C629AFBA69ADE /* Pods_PinchPhotoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinchPhotoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5B80594284A31EF00288229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19270895434660D90591C7E8 /* Pods_PinchPhotoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B805AD284A31F400288229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6362708301A59E0DADBBD712 /* Pods_PinchPhotoAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B805B7284A31F400288229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC02D0415488502DF88942C6 /* Pods_PinchPhotoApp_PinchPhotoAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1774BC889A969577E434C7DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3952C355BB0F7AEC8B88187D /* Pods_PinchPhotoApp.framework */,
+				9D3DB2D4E9DD25AA9CBA19EA /* Pods_PinchPhotoApp_PinchPhotoAppUITests.framework */,
+				F7574D32BF3C629AFBA69ADE /* Pods_PinchPhotoAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B49935342C41D931DC10A31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0749E5A88F54B4914CCF9A3 /* Pods-PinchPhotoApp.debug.xcconfig */,
+				ADC1DF9D7D13CE3967C602A1 /* Pods-PinchPhotoApp.release.xcconfig */,
+				363AA860397B54C927884A6A /* Pods-PinchPhotoApp-PinchPhotoAppUITests.debug.xcconfig */,
+				E70344D83D5A7525C911131D /* Pods-PinchPhotoApp-PinchPhotoAppUITests.release.xcconfig */,
+				E7AF9E5D0573386F0C9DAC6F /* Pods-PinchPhotoAppTests.debug.xcconfig */,
+				C1A09BD69B57587E8822E9D8 /* Pods-PinchPhotoAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F59A7962284B66D600D8D2ED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F59A7963284B66EE00D8D2ED /* Service.swift */,
+				F59A796E284B70D800D8D2ED /* NetworkError.swift */,
+				F59A7970284B742400D8D2ED /* MockService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F59A7965284B671F00D8D2ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F59A7966284B673300D8D2ED /* responses */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F59A7966284B673300D8D2ED /* responses */ = {
+			isa = PBXGroup;
+			children = (
+				F59A7967284B676300D8D2ED /* AlbumResponse.swift */,
+				F59A7969284B6AFB00D8D2ED /* PhotoResponse.swift */,
+			);
+			path = responses;
+			sourceTree = "<group>";
+		};
+		F59A796B284B6B9300D8D2ED /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				F59A796C284B6BA300D8D2ED /* Constants.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		F59A7975284B7C2700D8D2ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F59A7976284B7C3F00D8D2ED /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F59A797A284BDE9700D8D2ED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F59A797B284BDED200D8D2ED /* Ext+UIImageView.swift */,
+				F59A797F284BFAA000D8D2ED /* Ext+Array.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F5B8058E284A31EE00288229 = {
+			isa = PBXGroup;
+			children = (
+				F5B80599284A31EF00288229 /* PinchPhotoApp */,
+				F5B805B3284A31F400288229 /* PinchPhotoAppTests */,
+				F5B805BD284A31F400288229 /* PinchPhotoAppUITests */,
+				F5B80598284A31EF00288229 /* Products */,
+				6B49935342C41D931DC10A31 /* Pods */,
+				1774BC889A969577E434C7DE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5B80598284A31EF00288229 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5B80597284A31EF00288229 /* PinchPhotoApp.app */,
+				F5B805B0284A31F400288229 /* PinchPhotoAppTests.xctest */,
+				F5B805BA284A31F400288229 /* PinchPhotoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5B80599284A31EF00288229 /* PinchPhotoApp */ = {
+			isa = PBXGroup;
+			children = (
+				F59A797A284BDE9700D8D2ED /* Extension */,
+				F59A7975284B7C2700D8D2ED /* ViewModel */,
+				F59A796B284B6B9300D8D2ED /* Misc */,
+				F59A7965284B671F00D8D2ED /* Model */,
+				F59A7962284B66D600D8D2ED /* Network */,
+				F5CFE542284B2D5300E36F49 /* Storyboards */,
+				F5CFE53B284B263100E36F49 /* Coordinator */,
+				F5CFE53A284B23BE00E36F49 /* Support files */,
+				F5CFE539284B23AB00E36F49 /* View */,
+				F5B805AB284A31F300288229 /* Info.plist */,
+				F5B805A3284A31EF00288229 /* PinchPhotoApp.xcdatamodeld */,
+			);
+			path = PinchPhotoApp;
+			sourceTree = "<group>";
+		};
+		F5B805B3284A31F400288229 /* PinchPhotoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5B805B4284A31F400288229 /* PinchPhotoAppTests.swift */,
+			);
+			path = PinchPhotoAppTests;
+			sourceTree = "<group>";
+		};
+		F5B805BD284A31F400288229 /* PinchPhotoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5B805BE284A31F400288229 /* PinchPhotoAppUITests.swift */,
+				F5B805C0284A31F400288229 /* PinchPhotoAppUITestsLaunchTests.swift */,
+			);
+			path = PinchPhotoAppUITests;
+			sourceTree = "<group>";
+		};
+		F5CFE539284B23AB00E36F49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5CFE543284B2D8300E36F49 /* tableviewcells */,
+				F5B8059E284A31EF00288229 /* ViewController.swift */,
+				F5CFE546284B5A6600E36F49 /* PhotosViewController.swift */,
+				F59A7978284B843100D8D2ED /* BaseViewController.swift */,
+				F59A797D284BE3A100D8D2ED /* PhotoDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5CFE53A284B23BE00E36F49 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				F5B8059A284A31EF00288229 /* AppDelegate.swift */,
+				F5B805A8284A31F300288229 /* LaunchScreen.storyboard */,
+				F5B805A6284A31F300288229 /* Assets.xcassets */,
+				F5B8059C284A31EF00288229 /* SceneDelegate.swift */,
+			);
+			path = "Support files";
+			sourceTree = "<group>";
+		};
+		F5CFE53B284B263100E36F49 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F5CFE53C284B264F00E36F49 /* Storyboarded.swift */,
+				F5CFE53E284B294B00E36F49 /* Coordinator.swift */,
+				F5CFE540284B298400E36F49 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F5CFE542284B2D5300E36F49 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F5B805A0284A31EF00288229 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F5CFE543284B2D8300E36F49 /* tableviewcells */ = {
+			isa = PBXGroup;
+			children = (
+				F5CFE544284B2E7D00E36F49 /* AlbumTableViewCell.swift */,
+				F59A7960284B62F900D8D2ED /* PhotosTableViewCell.swift */,
+			);
+			path = tableviewcells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5B80596284A31EF00288229 /* PinchPhotoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5B805C4284A31F400288229 /* Build configuration list for PBXNativeTarget "PinchPhotoApp" */;
+			buildPhases = (
+				21AF30679FBB8B3503996C0B /* [CP] Check Pods Manifest.lock */,
+				F5B80593284A31EF00288229 /* Sources */,
+				F5B80594284A31EF00288229 /* Frameworks */,
+				F5B80595284A31EF00288229 /* Resources */,
+				4050975267937479B142EF07 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinchPhotoApp;
+			productName = PinchPhotoApp;
+			productReference = F5B80597284A31EF00288229 /* PinchPhotoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5B805AF284A31F400288229 /* PinchPhotoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5B805C7284A31F400288229 /* Build configuration list for PBXNativeTarget "PinchPhotoAppTests" */;
+			buildPhases = (
+				6EB255D7A1545CB1243387FD /* [CP] Check Pods Manifest.lock */,
+				F5B805AC284A31F400288229 /* Sources */,
+				F5B805AD284A31F400288229 /* Frameworks */,
+				F5B805AE284A31F400288229 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5B805B2284A31F400288229 /* PBXTargetDependency */,
+			);
+			name = PinchPhotoAppTests;
+			productName = PinchPhotoAppTests;
+			productReference = F5B805B0284A31F400288229 /* PinchPhotoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5B805B9284A31F400288229 /* PinchPhotoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5B805CA284A31F400288229 /* Build configuration list for PBXNativeTarget "PinchPhotoAppUITests" */;
+			buildPhases = (
+				6FCA411F870A0243B51205E8 /* [CP] Check Pods Manifest.lock */,
+				F5B805B6284A31F400288229 /* Sources */,
+				F5B805B7284A31F400288229 /* Frameworks */,
+				F5B805B8284A31F400288229 /* Resources */,
+				39DA4B0FEECF65A05621EC56 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5B805BC284A31F400288229 /* PBXTargetDependency */,
+			);
+			name = PinchPhotoAppUITests;
+			productName = PinchPhotoAppUITests;
+			productReference = F5B805BA284A31F400288229 /* PinchPhotoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5B8058F284A31EE00288229 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F5B80596284A31EF00288229 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					F5B805AF284A31F400288229 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = F5B80596284A31EF00288229;
+					};
+					F5B805B9284A31F400288229 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = F5B80596284A31EF00288229;
+					};
+				};
+			};
+			buildConfigurationList = F5B80592284A31EF00288229 /* Build configuration list for PBXProject "PinchPhotoApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5B8058E284A31EE00288229;
+			productRefGroup = F5B80598284A31EF00288229 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5B80596284A31EF00288229 /* PinchPhotoApp */,
+				F5B805AF284A31F400288229 /* PinchPhotoAppTests */,
+				F5B805B9284A31F400288229 /* PinchPhotoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5B80595284A31EF00288229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B805AA284A31F300288229 /* LaunchScreen.storyboard in Resources */,
+				F5B805A7284A31F300288229 /* Assets.xcassets in Resources */,
+				F5B805A2284A31EF00288229 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B805AE284A31F400288229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B805B8284A31F400288229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21AF30679FBB8B3503996C0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PinchPhotoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39DA4B0FEECF65A05621EC56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PinchPhotoApp-PinchPhotoAppUITests/Pods-PinchPhotoApp-PinchPhotoAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PinchPhotoApp-PinchPhotoAppUITests/Pods-PinchPhotoApp-PinchPhotoAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PinchPhotoApp-PinchPhotoAppUITests/Pods-PinchPhotoApp-PinchPhotoAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4050975267937479B142EF07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PinchPhotoApp/Pods-PinchPhotoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PinchPhotoApp/Pods-PinchPhotoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PinchPhotoApp/Pods-PinchPhotoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EB255D7A1545CB1243387FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PinchPhotoAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FCA411F870A0243B51205E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PinchPhotoApp-PinchPhotoAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5B80593284A31EF00288229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59A7961284B62F900D8D2ED /* PhotosTableViewCell.swift in Sources */,
+				F5CFE547284B5A6600E36F49 /* PhotosViewController.swift in Sources */,
+				F5B8059F284A31EF00288229 /* ViewController.swift in Sources */,
+				F59A796A284B6AFB00D8D2ED /* PhotoResponse.swift in Sources */,
+				F5CFE541284B298400E36F49 /* MainCoordinator.swift in Sources */,
+				F59A797C284BDED200D8D2ED /* Ext+UIImageView.swift in Sources */,
+				F59A7979284B843100D8D2ED /* BaseViewController.swift in Sources */,
+				F5B8059B284A31EF00288229 /* AppDelegate.swift in Sources */,
+				F59A7977284B7C4000D8D2ED /* ViewModel.swift in Sources */,
+				F5CFE53F284B294B00E36F49 /* Coordinator.swift in Sources */,
+				F59A7971284B742400D8D2ED /* MockService.swift in Sources */,
+				F59A7980284BFAA100D8D2ED /* Ext+Array.swift in Sources */,
+				F59A7968284B676300D8D2ED /* AlbumResponse.swift in Sources */,
+				F5CFE53D284B264F00E36F49 /* Storyboarded.swift in Sources */,
+				F59A796F284B70D800D8D2ED /* NetworkError.swift in Sources */,
+				F5B8059D284A31EF00288229 /* SceneDelegate.swift in Sources */,
+				F59A7964284B66EE00D8D2ED /* Service.swift in Sources */,
+				F59A797E284BE3A100D8D2ED /* PhotoDetailsViewController.swift in Sources */,
+				F59A796D284B6BA300D8D2ED /* Constants.swift in Sources */,
+				F5B805A5284A31EF00288229 /* PinchPhotoApp.xcdatamodeld in Sources */,
+				F5CFE545284B2E7D00E36F49 /* AlbumTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B805AC284A31F400288229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B805B5284A31F400288229 /* PinchPhotoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B805B6284A31F400288229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B805C1284A31F400288229 /* PinchPhotoAppUITestsLaunchTests.swift in Sources */,
+				F5B805BF284A31F400288229 /* PinchPhotoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5B805B2284A31F400288229 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5B80596284A31EF00288229 /* PinchPhotoApp */;
+			targetProxy = F5B805B1284A31F400288229 /* PBXContainerItemProxy */;
+		};
+		F5B805BC284A31F400288229 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5B80596284A31EF00288229 /* PinchPhotoApp */;
+			targetProxy = F5B805BB284A31F400288229 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5B805A0284A31EF00288229 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5B805A1284A31EF00288229 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5B805A8284A31F300288229 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5B805A9284A31F300288229 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5B805C2284A31F400288229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5B805C3284A31F400288229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5B805C5284A31F400288229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0749E5A88F54B4914CCF9A3 /* Pods-PinchPhotoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S44H7ZBAXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PinchPhotoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinch.photoapp.PinchPhotoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F5B805C6284A31F400288229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC1DF9D7D13CE3967C602A1 /* Pods-PinchPhotoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S44H7ZBAXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PinchPhotoApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinch.photoapp.PinchPhotoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F5B805C8284A31F400288229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7AF9E5D0573386F0C9DAC6F /* Pods-PinchPhotoAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S44H7ZBAXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinch.photoapp.PinchPhotoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinchPhotoApp.app/PinchPhotoApp";
+			};
+			name = Debug;
+		};
+		F5B805C9284A31F400288229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1A09BD69B57587E8822E9D8 /* Pods-PinchPhotoAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S44H7ZBAXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinch.photoapp.PinchPhotoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinchPhotoApp.app/PinchPhotoApp";
+			};
+			name = Release;
+		};
+		F5B805CB284A31F400288229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 363AA860397B54C927884A6A /* Pods-PinchPhotoApp-PinchPhotoAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S44H7ZBAXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinch.photoapp.PinchPhotoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PinchPhotoApp;
+			};
+			name = Debug;
+		};
+		F5B805CC284A31F400288229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E70344D83D5A7525C911131D /* Pods-PinchPhotoApp-PinchPhotoAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S44H7ZBAXH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinch.photoapp.PinchPhotoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PinchPhotoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5B80592284A31EF00288229 /* Build configuration list for PBXProject "PinchPhotoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B805C2284A31F400288229 /* Debug */,
+				F5B805C3284A31F400288229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5B805C4284A31F400288229 /* Build configuration list for PBXNativeTarget "PinchPhotoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B805C5284A31F400288229 /* Debug */,
+				F5B805C6284A31F400288229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5B805C7284A31F400288229 /* Build configuration list for PBXNativeTarget "PinchPhotoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B805C8284A31F400288229 /* Debug */,
+				F5B805C9284A31F400288229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5B805CA284A31F400288229 /* Build configuration list for PBXNativeTarget "PinchPhotoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B805CB284A31F400288229 /* Debug */,
+				F5B805CC284A31F400288229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5B805A3284A31EF00288229 /* PinchPhotoApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5B805A4284A31EF00288229 /* PinchPhotoApp.xcdatamodel */,
+			);
+			currentVersion = F5B805A4284A31EF00288229 /* PinchPhotoApp.xcdatamodel */;
+			path = PinchPhotoApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F5B8058F284A31EE00288229 /* Project object */;
+}
